@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Rueda Libre</title>
+  <meta name="description" content="Contacta a Rueda Libre: dirección, teléfonos, horarios, formulario y mapa.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera-fija">
+    <a class="logo" href="index.html">rueda libre</a>
+    <nav aria-label="Menú principal">
+      <ul class="menu">
+        <li><a href="index.html"><i class="fa-regular fa-heart" aria-hidden="true"></i>Inicio</a></li>
+        <li><a href="nosotros.html"><i class="fa-solid fa-users" aria-hidden="true"></i>Nosotros</a></li>
+        <li><a href="blog.html"><i class="fa-solid fa-pen" aria-hidden="true"></i>Blog</a></li>
+        <li><a href="galeria.html"><i class="fa-regular fa-image" aria-hidden="true"></i>Galería</a></li>
+        <li><a href="videos.html"><i class="fa-solid fa-video" aria-hidden="true"></i>Videos</a></li>
+        <li><a href="contactos.html" class="activo" aria-current="page"><i class="fa-solid fa-address-book" aria-hidden="true"></i>Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="ancho">
+    <h2 class="intro">Contacto</h2>
+
+    <section class="contacto" aria-label="Datos y formulario de contacto">
+      <div class="contacto-info">
+        <table class="tabla-contacto">
+          <thead>
+            <tr><th colspan="2" scope="colgroup">Información de Contacto</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Dirección</th><td>Jr. Carabaya 552 - Lima, Perú</td></tr>
+            <tr><th scope="row">Teléfonos</th><td>997 577 470 | 980 978 484 | (01) 533 5242</td></tr>
+            <tr><th scope="row">Email</th><td><a href="mailto:info@ruedalibre.pe">info@ruedalibre.pe</a></td></tr>
+          </tbody>
+          <thead>
+            <tr><th colspan="2" scope="colgroup">Horarios de Atención Presencial</th></tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="2">Área de Ventas:<br>De lunes a viernes de 8 am a 6 pm</td></tr>
+          </tbody>
+        </table>
+        <img class="foto-contacto" src="img/galeria-4.svg" alt="Detalle de plato y pedal de una bicicleta" width="600" height="400">
+      </div>
+
+      <form class="formulario" action="mailto:info@ruedalibre.pe" method="post" enctype="text/plain">
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name">
+
+        <label for="celular">Celular*</label>
+        <input type="tel" id="celular" name="celular" placeholder="999 999 999" inputmode="numeric" required>
+
+        <label for="correo">Correo electrónico*</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@dominio.com" required>
+
+        <label for="ruc">RUC - Empresa (opcional)</label>
+        <input type="text" id="ruc" name="ruc" inputmode="numeric" maxlength="11">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesita tu bici"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="mapa" aria-labelledby="local">
+      <h3 id="local">Local Central</h3>
+      <iframe title="Mapa de Google: Jirón Carabaya 552, Lima" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Jir%C3%B3n%20Carabaya%20552%2C%20Lima&amp;hl=es&amp;z=16&amp;output=embed" width="800" height="380"></iframe>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Síguenos en nuestras redes sociales:</p>
+    <nav aria-label="Redes sociales">
+      <ul class="redes">
+        <li><a href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Rueda Libre. Proyecto académico ISIL.</small></p>
+  </footer>
+</body>
+</html>
+
